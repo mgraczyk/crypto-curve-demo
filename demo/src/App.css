@@ -1,0 +1,57 @@
+.App {
+  max-width: 800px;
+  margin: auto;
+}
+
+.curve-form {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: [label] auto [input] 1fr;
+  margin: 10px;
+}
+.curve-form input {
+  grid-column: input;
+  align-self: center;
+}
+.curve-form label {
+  grid-column: label;
+  align-self: center;
+}
+
+.curve-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.curve-horizontal * {
+  margin: 0px 10px;
+}
+
+input[type=text] {
+  color: #333;
+  background: #fff;
+  border: 1px solid #999;
+}
+
+/* Error Styling */
+
+.curve-error label {
+  color: #cc0033;
+}
+
+.curve-error input[type=text] {
+  background-color: #fce4e4;
+  border: 1px solid #cc0033;
+  outline: none;
+}
+
+textarea.curve-error {
+  background-color: #fce4e4;
+  border: 1px solid #cc0033;
+  outline: none;
+}
+
+span.curve-error {
+  color: #cc0033;
+}
